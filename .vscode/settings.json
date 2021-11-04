@@ -3,7 +3,7 @@
     "python.terminal.activateEnvironment": true,
     "python.condaPath": "C:\\Users\\orran\\Anaconda3\\Scripts\\conda.exe",
     "terminal.integrated.profiles.windows": {
-        "My CMD": {
+        "Command Prompt": {
           "path": "C:\\Windows\\System32\\cmd.exe",
         }
       },
