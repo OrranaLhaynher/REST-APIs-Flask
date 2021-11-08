@@ -1,5 +1,3 @@
-import numpy as np
-import json
 from flask import Flask, jsonify, request
 
 app = Flask(__name__)

@@ -1,0 +1,9 @@
+Objective = Build Restful API that supports basic math operations
+Methods = GET, POST, PUT, DELETE
+Resources = +, -, *, /
+
+Resource, Method, Path, Used_For, Params, Error_Code (Status Code)
++, POST, /add, add two numbers, x : int e y : int, 200 (OK) e 400 (Missing parameter)
+-, POST, /subtract, subtract two numbers, x : int e y : int, 200 (OK) e 400 (Missing parameter)
+*, POST, /multiply, multiply two numbers, x : int e y : int, 200 (OK) e 400 (Missing parameter)
+/, POST, /divide, divide two numbers, x : int e y : int, 200 (OK) e 400 (Missing parameter) e 302 (Division by zero)
