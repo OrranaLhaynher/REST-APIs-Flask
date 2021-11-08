@@ -1,6 +1,6 @@
 import numpy as np
 import json
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
@@ -11,6 +11,21 @@ def hello():
 @app.route('/hithere', methods=['GET'])
 def hithere():
     return "Olá, eu pressionei /hithere."
+
+@app.route('/add_two_nums', methods=['POST'])
+def add_two_nums():
+    body = request.get_json(force=True)
+
+    if 'x' not in body:
+        return jsonify({"error": "ERROR", "message": "Two parameters must be provided"}), 305
+    elif 'y' not in body:
+        return jsonify({"error": "ERROR", "message": "Two parameters must be provided"}), 305
+    
+    json_add = {
+        "z" : body["x"] + body["y"]
+    }
+
+    return jsonify(json_add), 200
 
 @app.route('/bye', methods=['GET'])
 def bye():
