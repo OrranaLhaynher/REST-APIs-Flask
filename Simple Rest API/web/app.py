@@ -5,7 +5,7 @@ app = Flask(__name__)
 api = Api(app)
 
 def checkPostedData(postedData, functionName):
-    if functionName == 'add' or functionName == 'substract' or functionName == 'multiply':
+    if functionName == 'add' or functionName == 'subtract' or functionName == 'multiply':
         if 'x' not in postedData or 'y' not in postedData:
             return 400
         else:
@@ -21,6 +21,10 @@ def checkPostedData(postedData, functionName):
         print('Nome de resource errado.')
 
     return postedData
+
+class Home(Resource):
+    def get(self):
+        return {"message" : "API Simples de operacoes matematicas (add, subtract, multiply, divide)"}
 
 class Add(Resource):
     def post(self):
@@ -98,6 +102,7 @@ class Divide(Resource):
 
         return jsonify(json_add)
 
+api.add_resource(Home, '/')
 api.add_resource(Add, '/add')
 api.add_resource(Subtract, '/subtract')
 api.add_resource(Multiply, '/multiply')
