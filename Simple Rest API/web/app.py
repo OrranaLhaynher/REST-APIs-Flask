@@ -5,7 +5,7 @@ app = Flask(__name__)
 api = Api(app)
 
 def checkPostedData(postedData, functionName):
-    if functionName == 'add' or functionName == 'substract' or functionName == 'multiply':
+    if functionName == 'add' or functionName == 'subtract' or functionName == 'multiply':
         if 'x' not in postedData or 'y' not in postedData:
             return 400
         else:
@@ -40,6 +40,9 @@ class Add(Resource):
         }
 
         return jsonify(json_add)
+
+    '''def get(self):
+        return {"message" : "Testando essa merda"}'''
 
 class Subtract(Resource):
     def post(self):
