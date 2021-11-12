@@ -22,6 +22,10 @@ def checkPostedData(postedData, functionName):
 
     return postedData
 
+class Home(Resource):
+    def get(self):
+        return {"message" : "API Simples de operacoes matematicas (add, subtract, multiply, divide)"}
+
 class Add(Resource):
     def post(self):
         body = request.get_json()
@@ -101,6 +105,7 @@ class Divide(Resource):
 
         return jsonify(json_add)
 
+api.add_resource(Home, '/')
 api.add_resource(Add, '/add')
 api.add_resource(Subtract, '/subtract')
 api.add_resource(Multiply, '/multiply')
