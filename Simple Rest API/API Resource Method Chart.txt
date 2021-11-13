@@ -1,5 +1,5 @@
 Objective = Build Restful API that supports basic math operations
-Methods = GET, POST, PUT, DELETE
+Methods = GET, POST
 Resources = +, -, *, /
 
 Resource, Method, Path, Used_For, Params, Error_Code (Status Code)
