@@ -1,6 +1,6 @@
-Objective = Compare similarity os documents
-Methods = GET, POST
-Resources = Home, Register_User, Detect_Similarity, Refill 
+- Objective = Compare similarity os documents
+- Methods = GET, POST
+- Resources = Home, Register_User, Detect_Similarity, Refill 
 
 
 | Resource          | Method | Path      | User_For          | Params                                          | Status_Code              |
