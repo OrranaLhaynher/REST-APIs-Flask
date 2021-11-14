@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://github.com/explosion/spacy-models/releases/tag/pt_core_news_sm-3.1.0
+HostUrl=https://objects.githubusercontent.com/github-production-release-asset-2e65be/84940268/fec3a500-d51b-11eb-8006-52a0cfb98fd7?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20211113%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211113T192128Z&X-Amz-Expires=300&X-Amz-Signature=cb754d2ee213b3da45ec6129087b16bd1e4df854f2eebbba36eef896d3e4a0bb&X-Amz-SignedHeaders=host&actor_id=42912102&key_id=0&repo_id=84940268&response-content-disposition=attachment%3B%20filename%3Dpt_core_news_sm-3.1.0.tar.gz&response-content-type=application%2Foctet-stream
