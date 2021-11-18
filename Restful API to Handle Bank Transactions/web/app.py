@@ -89,7 +89,7 @@ class Register_User(Resource):
             "username" : username,
             "password" : password_hashed,
             "own": 0,
-            "dept": 0
+            "debt": 0
         })
 
         return jsonify(generateReturnDictionary("Sign up performed successfully.", 200))
